@@ -23,7 +23,7 @@ class Controller{
             res.send( funcionarios );
 
         })
-         }
+    }
 }
 
 

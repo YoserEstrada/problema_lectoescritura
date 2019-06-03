@@ -15,42 +15,47 @@ app.get("/Funcionarios", (req, res) => {
   controller.getFuncionarios(res);
 });
 
-app.get("/estudiantes", (req,res)=>{
-    let estudiantes = [
+app.get("/Estudiantes", (req,res)=>{
+    /*let estudiantes = [
         {idestudiante:"", nombreestudiante1:"", nombreestudiante2:"", apellidoestudiante1:"",
         apellidoestudiante2:"", sexo:"", edad:"", idasignatura:"", idgrado:"", idfuncionario:"",
         idreporte:"", idtipodeproblema:""}
     ];
-    res.send(estudiantes);
+    res.send(estudiantes);*/
+controller.getEstudiantes(res);
 });
 
-app.get("/asignaturas", (req,res)=>{
-    let asignaturas = [
+app.get("/Asignaturas", (req,res)=>{
+    /*let asignaturas = [
         {idasignatura:"", nombreasignatura:"", grado:""}
     ];
-    res.send(asignaturas);
+    res.send(asignaturas);*/
+controller.getAsignaturas(res);
 });
 
-app.get("/problemas", (req,res)=>{
-    let problemas = [
+app.get("/Problemas", (req,res)=>{
+    /*let problemas = [
         {idtipodeproblema:"", tipodeproblema:"", actividad:"", idfuncionario:"", idestudiante:""}
     ];
-    res.send(problemas);
+    res.send(problemas);*/
+controller.getProblemas(res);
 });
 
-app.get("/responsables", (req,res)=>{
-    let responsables = [
+app.get("/Responsables", (req,res)=>{
+    /*let responsables = [
         {idresponsable:"", nombreresponsable1:"", nombreresponsable2:"", apellidoresponsable1:"",
         apellidoresponsable2:"", telefonoresponsable:"", idestudiante:""}
     ];
-    res.send(responsables);
+    res.send(responsables);*/
+controller.getResponsables(res);
 });
 
-app.get("/reportes", (req,res)=>{
-    let reportes = [
+app.get("/Reportes", (req,res)=>{
+    /*let reportes = [
         {idreporte:"", idfuncionario:"", idestudiante:"", idtipodeproblema:""}
     ];
-    res.send(reportes);
+    res.send(reportes);*/ 
+controller.getReportes(res);
 });
 
 exports.app = app;

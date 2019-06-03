@@ -1,5 +1,11 @@
 const mongoose = require("mongoose");
 const Funcionario = require("./models/Funcionario");
+const Estudiante = require("./models/Estudiante");
+const Asignatura = require("./models/Asignatura");
+const Problema = require("./models/Problema");
+const Responsable = require("./models/Responsable");
+const Reporte = require("./models/Reporte");
+
 class Controller{
     constructor(){
         this.connect();
@@ -21,9 +27,43 @@ class Controller{
         Funcionario.find({}, (err,funcionarios)=>{
             if(err) throw err;
             res.send( funcionarios );
+            })
+            }
 
-        })
-    }
+    getEstudiantes(res){
+            Estudiante.find({}, (err,estudiantes)=>{
+            if(err) throw err;
+            res.send( estudiantes );
+            })
+            }
+
+    getAsignaturas(res){
+            Asignatura.find({}, (err,asignaturas)=>{
+            if(err) throw err;
+            res.send( asignaturas );
+            })
+            }
+
+    getProblemas(res){
+            Problema.find({}, (err,problemas)=>{
+            if(err) throw err;
+            res.send( problemas );
+            })
+            }
+
+    getResponsables(res){
+            Responsable.find({}, (err,responsables)=>{
+            if(err) throw err;
+            res.send( responsables );
+            })
+            }
+    
+    getReportes(res){
+            Reporte.find({}, (err,reportes)=>{
+            if(err) throw err;
+            res.send( reportes );
+            })
+            }
 }
 
 

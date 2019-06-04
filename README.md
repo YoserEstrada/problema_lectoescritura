@@ -1,13 +1,25 @@
-# problema_lectoescritura
-prueba2
+<!DOCTYPE html>
+<html lang="en">
 
-PROGRSMACION WEB
-MARTES 4:00 - 6:00
-VIERNES 8:00 - 10:00
+<body>
+<h1>
+  <p># problema_lectoescritura</p>
+  <p>prueba2</p></h1>
 
-GRUPO2 
 
-ISAAC ANDRES DEL TORO FLOREZ
-JESUS MANUEL SEÑA
-YOSER ESTRADA HERNANDEZ
+<h2>  
+  <p>PROGRSMACION WEB</p>
+  <p>MARTES 4:00 - 6:00</p>
+  <p>VIERNES 8:00 - 10:00</p>
+</h2>
 
+<h3>
+  <p>GRUPO2</p>
+
+  <p>ISAAC ANDRES DEL TORO FLOREZ</p>
+  <p>JESUS MANUEL SEÑA</p>
+  <p>YOSER ESTRADA HERNANDEZ</p>
+</h3>
+
+</body>
+</html>

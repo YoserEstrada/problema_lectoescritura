@@ -4,8 +4,7 @@
 <body>
 <h1>
   <p># problema_lectoescritura</p>
-  <p>prueba2</p></h1>
-
+  
 
 <h2>  
   <p>PROGRSMACION WEB</p>

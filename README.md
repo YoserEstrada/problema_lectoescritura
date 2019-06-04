@@ -7,7 +7,7 @@
   
 
 <h2>  
-  <p>PROGRSMACION WEB</p>
+  <p>PROGRAMACION WEB</p>
   <p>MARTES 4:00 - 6:00</p>
   <p>VIERNES 8:00 - 10:00</p>
 </h2>

@@ -9,11 +9,31 @@ const EstudiantesSchema = new Schema ({
     apellidoestudiante2:String,
     sexo:String,
     edad:String,
-    idasignatura:String,
-    idgrado:String,
-    idfuncionario:String,
-    idreporte:String,
-    idtipodeproblema:String
+    asignaturas:[
+        {
+            type: Schema.Types.ObjectId,
+            ref: "Asignatura"
+        }
+    ],
+    funcionarios:[
+        {
+           type: Schema.Types.ObjectId,
+            ref: "Funcionario" 
+        }
+    ],
+    reportes:[
+        {
+           type: Schema.Types.ObjectId,
+            ref: "Reporte" 
+        }
+    ],
+    problemas:[
+        {
+           type: Schema.Types.ObjectId,
+            ref: "Problema" 
+        }
+    ],
+    
 });
 var Estudiante = mongoose.model("Estudiantes",EstudiantesSchema);
 module.exports = Estudiante;

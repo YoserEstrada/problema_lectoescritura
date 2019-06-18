@@ -24,7 +24,7 @@ class Controller{
     }
 
     getFuncionarios(res){
-        Funcionario.find({nombrefuncionario1:"yoser"}, (err,funcionarios)=>{
+        Funcionario.find({}, (err,funcionarios)=>{
             if(err) throw err;
             res.send( funcionarios );
             })

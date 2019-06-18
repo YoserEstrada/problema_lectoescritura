@@ -8,7 +8,12 @@ const ResponsablesSchema = new Schema({
     apellidoresponsable1:String,
     apellidoresponsable2:String,
     telefonoresponsable:String,
-    idestudiante:String
+    estudiantes:[
+        {
+           type: Schema.Types.ObjectId,
+            ref: "Estudiante" 
+        }
+    ]
 });
 
 var Responsable = mongoose.model("Responsables",ResponsablesSchema);

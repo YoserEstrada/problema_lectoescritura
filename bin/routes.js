@@ -9,7 +9,7 @@ app.get("/", (req, res) => {
 });
 
 //traer todos los funcionarios
-app.get("/Funcionarios", (request, res) => {
+app.get("/Funcionarios", (req, res) => {
 controller.getFuncionarios(res);
 });
 
@@ -26,7 +26,7 @@ app.get("/Funcionarios/:idfuncionario", function(req, res) {
 });
 
 //traer todos los estudiantes
-app.get("/Estudiantes", (request,res)=>{
+app.get("/Estudiantes", (req,res)=>{
 controller.getEstudiantes(res);
 });
 

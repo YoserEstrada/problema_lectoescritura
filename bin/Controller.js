@@ -41,7 +41,7 @@ class Controller{
     //Traer un funcionario por su id
         getFuncionarios(idfuncionario, res) {
             Funcionario.find({ _id: idfuncionario }, (err, funcionario) => {
-            res.send({ status: 200, funcionario: funcionario });
+            res.send ({ status: 200, funcionario: funcionario });
             });
             }
 
@@ -49,8 +49,8 @@ class Controller{
     getEstudiantes(res){
             Estudiante.find({}, (err,estudiantes)=>{
             if(err) throw err;
-            res.send( estudiantes );
-            })
+            res.send(estudiantes);
+            });
             }
 
     //Agregar un estudiante

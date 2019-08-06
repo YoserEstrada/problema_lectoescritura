@@ -1,4 +1,4 @@
 const { app } = require("./bin/routes");
-app.listen(3000, () => {
-  console.log("Server on port http://localhost:3000" );
+app.listen(27017, () => {
+  console.log("Server on port http://localhost:27017" );
 });

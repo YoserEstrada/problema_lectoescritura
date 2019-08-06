@@ -18,22 +18,22 @@ const EstudiantesSchema = new Schema ({
     funcionarios:[
         {
            type: Schema.Types.ObjectId,
-            ref: "Funcionario" 
+            ref: "Funcionario"
         }
     ],
     reportes:[
         {
            type: Schema.Types.ObjectId,
-            ref: "Reporte" 
+            ref: "Reporte"
         }
     ],
     problemas:[
         {
            type: Schema.Types.ObjectId,
-            ref: "Problema" 
+            ref: "Problema"
         }
     ],
-    
+
 });
 var Estudiante = mongoose.model("Estudiantes",EstudiantesSchema);
 module.exports = Estudiante;
